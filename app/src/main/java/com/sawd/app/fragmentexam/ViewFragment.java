@@ -12,7 +12,6 @@ public class ViewFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View parentView = inflater.inflate(R.layout.view_fragment, container, false);
-        parentView.setBackgroundColor(0xFF0000);
         // Inflate the layout for this fragment
         return parentView;
     }
