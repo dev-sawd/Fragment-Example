@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, new ViewFragment1());
+                fragmentTransaction.replace(R.id.fragment_container, new Fragment1());
                 fragmentTransaction.commit();
             }
         });
@@ -31,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, new ViewFragment2());
+                fragmentTransaction.replace(R.id.fragment_container, new Fragment2());
                 fragmentTransaction.commit();
             }
         });
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, new ViewFragment1());
+        fragmentTransaction.replace(R.id.fragment_container, new Fragment1());
         fragmentTransaction.commit();
     }
 }
