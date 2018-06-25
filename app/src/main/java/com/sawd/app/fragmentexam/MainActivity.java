@@ -14,18 +14,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnShowView1 = findViewById(R.id.btnShowView1);
+        Button btnShowView1 = findViewById(R.id.btnShowFragment1);
         btnShowView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container, new ViewFragment());
+                fragmentTransaction.replace(R.id.fragment_container, new ViewFragment1());
                 fragmentTransaction.commit();
             }
         });
 
-        Button btnShowView2 = findViewById(R.id.btnShowView2);
+        Button btnShowView2 = findViewById(R.id.btnShowFragment2);
         btnShowView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container, new ViewFragment());
+        fragmentTransaction.replace(R.id.fragment_container, new ViewFragment1());
         fragmentTransaction.commit();
     }
 }
